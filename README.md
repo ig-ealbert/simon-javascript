@@ -6,6 +6,12 @@ It starts with one light in the pattern, and goes up to 8. If you can recreate a
 
 When a light is lit, the border of it will change color, so pay close attention. (Also, if you have suggestions for better color contrasts, please let me know!)
 
+## Install
+
+```bash
+npm install
+```
+
 ## Running the Game
 
 ```bash
@@ -16,6 +22,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Running the Tests
 
-```
+```bash
 npm test
 ```

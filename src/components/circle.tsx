@@ -6,9 +6,9 @@ import { CIRCLE_BORDER, CIRCLE_RADIUS, CIRCLE_Y } from "@/constants";
 export default function Circle(props: circleProps) {
   const colorToIndex: Record<string, number> = {
     "blue": 0,
-    "red": 1,
+    "maroon": 1,
     "green": 2,
-    "yellow": 3,
+    "goldenrod": 3,
   };
 
   function determineColor() {
@@ -20,7 +20,7 @@ export default function Circle(props: circleProps) {
 
   return (
     <circle cx={props.x} cy={CIRCLE_Y} r={CIRCLE_RADIUS}
-            fill={props.color} stroke={determineColor()} strokeWidth={CIRCLE_BORDER}
+            fill={determineColor()} stroke={props.color} strokeWidth={CIRCLE_BORDER}
             onClick={() => props.submitGuess(colorToIndex[props.color])}>
     </circle>
   );
